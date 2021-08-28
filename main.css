@@ -5,7 +5,6 @@ figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, su
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 }
@@ -23,104 +22,56 @@ ul {
 	padding-left: 1.4em;
 	list-style: square;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} 
+
 /* конец кода сброса стилей браузера */
 
 body {
-  font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #002D4B;
-  background: #E1EEFD url(images/bg_body.png) repeat-x;
+	width: 760px;
+	margin: 0 auto;	
+	background-color: #FDFCD2;
 }
 
-.main {
-  width: 740px;
-  margin: 0 auto;
-  padding: 0 10px;
-  border: 4px solid white;
-  background: transparent url(images/bg_banner.jpg) no-repeat;
+h1 {
+	font: italic normal 3em Baskerville, "Palatino Linotype", "Times New Roman", serif;
+	color: #46874D;
+	background: url(../images/underline.png) no-repeat 0px 88%;
+	padding-left: 2px;
 }
 
-.main h1 {
-  color: #FF6600;
-	font-family: "Arial Black", Arial, Helvetica, sans-serif;
-	font-size: 4em;
+/* пользовательские стили  */
+#price, #rating {
+  width: 15%;
 }
-
-.main h1 strong {
-  font-size: 150px;
+.inventory {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+.inventory caption {
+  text-align: right;
+  font-size: .85em;
+  margin-bottom: 10px;
+}
+.inventory td, .inventory th {
+  font-size: 1.1em;
+  border: 1px solid #DDB575;
+  padding: 3px 7px 2px 7px;
+}
+.inventory th {
+  text-transform:uppercase;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  background: rgb(229,76,16);
+  background: linear-gradient(to bottom, rgb(229,76,16), rgb(173,54,8));
   color: white;
-  line-height: 1em;
-  margin-right: -1.25em;
+}
+.inventory tr:nth-of-type(even){
+  background-color: rgba(255,255,255,.1);
+}
+.inventory tr:nth-of-type(odd){
+  background-color: rgba(229,76,16,.1);
 }
 
 
-.main h2 {
-	font: bold 3.5em "Hoefler Text", Garamond, Times, serif;
-	border-bottom: 1px solid #002D4B;
-	margin-top: 25px;
-}
-
-.main h3 {
-	color: #F60;
-	font-size: 1.9em;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-top: 25px;
-	margin-bottom: 10px;
-}
-
-.main p {
-	font-size: 1.5em;
-	line-height: 150%;
-	margin-bottom: 10px;
-	margin-left: 150px;
-	margin-right: 50px;
-}
-
-.main p:first-line {
-  font-weight: bold;
-  color: #999;
-}
-
-
-.resources {
-	margin: 0 0 25px 50px;
-	width: 225px;
-	float: right;
-	padding: 20px;
-	background: #F5EFFB;
-}
-
-.resources h3 {
-	margin-top: 0;
-	color: #002D4B;
-}
-
-.resources li {
-	font-size: 1.5em;
-	margin-bottom: 7px;
-	color: #207EBF;
-}
-
-.main .byline {
-  color: #999999;
-	font-size: 1.6em;
-	margin: 5px 0 25px 40px;
-}
-
-.main .byline strong {
-	color: #207EBF;
-	text-transform: uppercase;
-	margin-left: 11px;
-} 
-.main .legal{
-	margin-top: 15px;
-	padding-top: 5px;
-	border-top: 1px solid #FFF;
-	margin-left: 0px;
-	padding-left: 150px;
-}
